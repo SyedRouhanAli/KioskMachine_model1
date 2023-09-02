@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Ordering System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Food Ordering System</h1>
+    </header>
+    
+    <main>
+        <section class="menu">
+            <h2>Menu</h2>
+            <ul id="menu-list">
+                <!-- Menu items will be generated here using JavaScript -->
+            </ul>
+        </section>
+        <section class="cart">
+            <h2>Cart</h2>
+            <ul id="cart-items">
+                <!-- Cart items will be generated here using JavaScript -->
+            </ul>
+            <p>Total: PKR <span id="total-price">0.00</span></p>
+            <button id="checkout-btn">Checkout</button>
+        </section>
+    </main>
+    <script src="script.js"></script>
+    <section class="calculator">
+        <h2>Calculator</h2>
+        <div class="calculator-buttons">
+            <button onclick="addToCalculator('1')">1</button>
+            <button onclick="addToCalculator('2')">2</button>
+            <button onclick="addToCalculator('3')">3</button>
+            <button onclick="addToCalculator('+')">+</button>
+            <button onclick="addToCalculator('4')">4</button>
+            <button onclick="addToCalculator('5')">5</button>
+            <button onclick="addToCalculator('6')">6</button>
+            <button onclick="addToCalculator('-')">-</button>
+            <button onclick="addToCalculator('7')">7</button>
+            <button onclick="addToCalculator('8')">8</button>
+            <button onclick="addToCalculator('9')">9</button>
+            <button onclick="addToCalculator('*')">*</button>
+            <button onclick="addToCalculator('0')">0</button>
+            <button onclick="clearCalculator()">C</button>
+            <button onclick="calculateResult()">=</button>
+            <button onclick="addToCalculator('/')">/</button>
+        </div>
+        <input id="calculator-display" type="text" disabled>
+    </section>
+    
+    <footer>
+        <p>Github: <a href="https://github.com/SyedRouhanAli" >SyedRouhanAli</a> </p>
+    </footer>
+</body>
+</html>
